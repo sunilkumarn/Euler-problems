@@ -27,8 +27,8 @@ def largest_13_digit_number
   loop do 
     break if number_series.size == 0
     next_number = number_series.shift
-    current_series << new_number
-    if new_number > current_series.shift   
+    current_series << next_number
+    if next_number > current_series.shift
       new_product = current_series.inject(&:*)
       largest_number = (new_product > largest_number) ? new_product : largest_number
     end
