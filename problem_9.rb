@@ -5,7 +5,6 @@ def pythagorus_triplet
     for b in (a..max)
       for c in (b..max)
         if a**2 + b**2 == c**2 and a+b+c == 1000
-          puts a, b, c
           product =  a * b * c
           break
         end

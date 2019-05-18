@@ -1,7 +1,7 @@
 class Integer
   def is_a_prime?
     prime = true
-    (2..self/2).each do |number|
+    (2..Math.sqrt(self)).each do |number|
       prime = false if (self % number == 0)
     end
     prime
